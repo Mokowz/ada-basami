@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <nav>
+        <label class="logo" ><a href="#home">Ada Basami</a></label>
+        <i class="bi bi-list" id="ham" onclick="toggleMenu(this)"></i>
+        <ul class="nav-list">
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#interests">INTERESTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <header class="header" id="home">
+        <div class="header-info">
+            <h2>I am a Software Developer at Google</h2>
+            <h1>When I wrote this code, only God and I understood what I did. Now only God knows.</h1>
+            <button><a href="#about">FIND OUT MORE</a></button>
+        </div>
+    </header>
+    <section class="about reveal" id="about">
+        <h1>WHO AM I?</h1>
+        <div class="img-stuff">
+            <div class="potrait-img">
+                <img src="rui-silvestre-hAMJpesMeDE-unsplash.jpg" alt="" class="potrait">
+            </div>
+            <span>Ada Basami</span>
+        </div>
+        <p class="about-p">I am a <span>Sitecore Certified Professional Web Developer</span>, and have been developing enterprise solutions using the Sitecore content management system since 2012. I have worked on over ten different Sitecore solutions, ranging from a major travel engine's online booking engine to an internal site for one of the "Big Four" accounting firms, and beyond. An early version of one of my JavaScript plugins (license included) is also visible in the view source of the news site for the <span>Xbox One</span>.</p>
+
+            <p class="about-p">Since 2012, I have been working with responsive design integration, and have experimented with several responsive techniques and tools. I have worked with <span>Twitter Bootstrap</span>, although I prefer to add responsive support manually, whenever possible. I am a very big fan of using media queries on my sites and I strive to design layouts that can easily be optimized for aesthetic appeal on each of desktops, tablets and cell phones. This site uses a responsive design, and I have completed responsive integration throughout most of the site.</p>
+    </section>
+    <section class="interests" id="interests">
+        <h1>What I love doing</h1>
+        <div class="card-container">
+            <div class="card">
+                <div class="icon-int">
+                    <i class="bi bi-laptop"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>The thing that I love about being a web developer, and a developer in general, is and always has been the sole fact that it lets me create new things out of nothing.
+
+                    You can come up with an idea and just bring it to life only using your fingers and a keyboard, and you don’t need to be a genius, nor an artist, nor an artisan - you can just learn all needed things on the Internet and become a developer.</p>
+            </div>
+            <div class="card">
+                <div class="icon-int">
+                    <i class="bi bi-easel2"></i>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>The thing that I love about being a web developer, and a developer in general, is and always has been the sole fact that it lets me create new things out of nothing.
+
+                    You can come up with an idea and just bring it to life only using your fingers and a keyboard, and you don’t need to be a genius, nor an artist, nor an artisan - you can just learn all needed things on the Internet and become a developer.</p>
+            </div>
+            <div class="card">
+                <div class="icon-int">
+                    <i class="bi bi-boombox"></i>
+                </div>
+                <h3>Music Engineering</h3>
+                <p>The thing that I love about being a web developer, and a developer in general, is and always has been the sole fact that it lets me create new things out of nothing.
+
+                    You can come up with an idea and just bring it to life only using your fingers and a keyboard, and you don’t need to be a genius, nor an artist, nor an artisan - you can just learn all needed things on the Internet and become a developer.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1>HIT ME UP</h1>
+        <form action="https://formspree.io/f/xlezawda" method="post">
+            <div class="contact-container">
+                <div class="name-email">
+                    <div class="name">
+                        <label for="name" class="name-input">Name</label><br>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email">
+                    </div>
+                </div>
+                <div class="messo">
+                    <label for="message">Message</label><br>
+                    <textarea name="message" placeholder="Remember, be nice!" cols="70" rows="9" class="message-input"></textarea>
+                </div>
+                
+            </div>
+            <input type="submit" value="SEND MESSAGE" class="submit">
+        </form>
+        <div class="social-media">
+            <div class="whatsapp">
+                <a href="https://wa.me/+254798873501" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            <div class="ig">
+                <a href="https://www.instagram.com/rmkerosi/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div class="twitter">
+                <a href="https://twitter.com/mokayakerosi"target="_blank"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+        <div class="rights">
+            <span>&copy Ronny Mokaya 2022. All Rights Reserved.</span>
+        </div>
+    </section>
+</body>
+</html>

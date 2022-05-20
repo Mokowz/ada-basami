@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Kumbh+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    background: transparent;
+
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; 
+    /* overflow-x:hidden; */
+    box-sizing: border-box;
+    font-family: kumbh sans;
+}
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 60px;
+    background-color: rgb(39, 42, 49);
+}
+.logo{
+    font-family: cookie;
+    font-size: 2em;
+    color: white;
+    line-height: 60px;
+    padding-left: 2em;
+}
+.nav-list{
+    float: right;
+    list-style: none;
+    display: flex;
+    padding-right: 3em;
+    line-height: 60px;
+}
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1.2em;
+    font-family: kumbh sans;
+}
+.nav-list li a:hover{
+    text-decoration: underline;
+}
+.bi-list{
+    color: white;
+    font-size: 1.6em;
+    line-height: 60px;
+    float: right;
+    display: none;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url("markus-spiske-Skf7HxARcoc-unsplash.jpg");
+    background-size: cover;
+    background-color: rgb(67, 97, 238, .6);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    padding: 0 2em;
+}
+.header-info{
+    margin-top: 10em;
+    max-width: 750px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-info h1{
+    font-size: 2.3em;
+}
+.header-info h2{
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    color: rgba(255, 255, 255, 0.877);
+}
+.header-info button{
+    margin-top: 1.5em;
+    background-color: blue;
+    border: none;
+    padding: .8em 1.2em;
+    color: white;
+    font-family: kumbh sans;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.header-info button:hover{
+    background-color: rgb(45, 45, 255);
+}
+.potrait-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.potrait{
+    position: relative;
+    bottom: 30px;
+    border-radius: 50%;
+    transform: scale(1.6);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-stuff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-stuff span{
+    font-family: kumbh sans;
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-top: .4em;
+}
+.about{
+    width: 100%;
+    height: auto;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 238, 225);
+}
+.about p{
+    margin-top: 1em;
+    max-width: 600px;
+}
+.about-p span{
+    color: blue;
+}
+.about h1{
+    font-size: 2em;
+    font-weight: 700;
+    font-family: kumbh sans;
+}
+.logo a{
+    text-decoration: none;
+    color: blue;
+}
+.interests{
+    height: 100vh;
+    width: 100%;
+    padding: 80px;
+    background-color: rgb(253, 245, 235);
+}
+.interests h1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: kumbh sans;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    margin-top: 4em;
+}
+.card{
+    width: 30%;
+    height: ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 250, 250);
+    padding: 2em ;
+    border-radius: 20px;
+    margin-right: 2.4em;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 2px 4px 10px rgb(114, 114, 114);
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.card h3{
+    margin: .4em;
+    font-size: 1.2em;
+    color: rgb(19, 18, 18);
+    
+}
+.icon-int{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+.reveal{
+    padding-top: 500px ;
+    opacity: 0;
+    transition:all 2s ease
+}
+.reveal.active{
+    padding-top: 80px;
+    opacity: 1;
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    z-index: 3;
+    background-color: rgb(248, 238, 225);
+}
+.contact h1{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+    font-family: kumbh sans;
+}
+.contact-container{
+    margin-top: 4em;
+    display: flex;
+}
+.name-email{
+    width: 50%;
+}
+.message-input{
+    padding: .6em;
+    font-family: kumbh sans;
+}
+
+.contact label{
+    text-align: center;
+}
+input{
+    margin-bottom: .8em;
+    width: 400px;
+    height: 50px;
+    margin-right: 2em;
+}
+input, textarea{
+    border: 1px solid black;
+    background-color: white;
+}
+textarea{
+    width: 100%;
+}
+input,textarea{
+    font-size: .9em;
+    color: rgb(94, 94, 94);
+    font-family: kumbh sans;
+}
+.submit{
+    /* margin-top: 1.5em; */
+    background-color: blue;
+    border: none;
+    padding: .8em 1.2em;
+    color: white;
+    font-family: kumbh sans;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin: 2em auto;
+}
+.submit:hover{
+    background-color: rgb(45, 45, 255);
+}
+.social-media{
+    display: flex;
+    margin: 0 auto;
+}
+.social-media div{
+    margin-right: 1em;
+}
+.social-media div{
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.ig:hover i{
+    color: #fb3958;
+}
+.whatsapp:hover i{
+    color: #25D366;
+}
+.twitter:hover i{
+    color: #1DA1F2;
+}
+.social-media div a{
+    color: black;
+}
+.rights{
+    margin: 1em auto;
+}
+.rights span{
+    font-size: .9em;
+    color: #2b2b2b ;
+}
+
+
+@media (max-width:1000px){
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .interests{
+        height: auto;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .interests{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card{
+        width: 90%;
+        margin: 2em 0;
+        max-height: 400px;
+    }
+    .card p{
+        margin-top: .5em;
+    }
+    .bi-list{
+        color: white;
+        font-size: 1.6em;
+        line-height: 60px;
+        float: right;
+        display: block;
+        padding-right: 2em;
+    }
+    .header-info h1{
+        font-size: 32px;
+    }
+
+    .header-info h2{
+        font-size: 24px;
+    }
+    .nav-list{
+        transform: translateX(-1100px);
+        transition: all .5s ease;
+        position: absolute;
+    }
+    .show{
+        transform: translateX(0px);
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        background: rgb(39, 42, 49);
+        height: 100vh;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-list li{
+        height: 15%;
+        
+    }
+    .about h1{
+        margin-bottom: 1.2em;
+    }
+    .contact{
+        padding: 80px 20px;
+        height: auto;
+    }
+}
+@media (max-width:400px){
+    input{
+        max-width: 250px;
+    }
+    .header{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .contact{
+        padding: 80px 20px;
+        height: auto;
+    }
+    .card{
+        width: 100%;  
+    }
+    .card p{
+        font-size: .7em;
+    }
+    .interests{
+        padding: 80px 20px;
+        height: auto;
+    }
+    .interests{
+        height: auto;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .interests{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .icon-int{
+        width: 60px;
+        height: 60px;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: white;
+    }
+    .about{
+        padding: 80px 20px;
+        height: auto;
+    }
+}
